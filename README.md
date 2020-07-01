@@ -1,18 +1,23 @@
 # proxy-stream-drive
-Google Drive Streaming Video Basic
+Google Drive Streaming Video
 
-Install:
-1) Clone repository
-2) Run:  npm install pm2 -g && cd proxy-stream-drive && npm install
-3) Start pm2:  npm run pm2
-5) Url default: ip:3000
+## UPDATE:
+Now, Google has stopped streaming video from Google Driver by resolve reCaptcha. I can't solve this problem.
 
-End point:
+## Install:
+Run command:
+```
+sudo apt update && apt upgrade
+git clone https://github.com/tuyenldhust/proxy-stream-drive.git
+cd proxy-stream-drive
+npm install && sudo npm i -g pm2 && pm2 start cluster.js
+```
+## End point:
 - Home: ip:3000
 - Getlink: ip:3000/sources?fileId={drive-id}
 - Embed: ip:3000/embed.html?fileId={drive-id}
 
-NOTE:
+## NOTE:
 - Proxy stream with Google Driver Link
 - Cache link 6h
 - Memory leak basic
